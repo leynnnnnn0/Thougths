@@ -28,10 +28,14 @@ route.post("/addnote", async (req, res) => {
     
 }) 
 
-route.put("/testPut", async (req, res) => {
-    const { publisher, note } = req.body;
+route.put("/updatenote", async (req, res) => {
+    const { _id, title, note, publisher } = req.body;
     try {
-        const thought = await Thougths.findOneAndUpdate({ publisher, note: note });
+        await Thougths.findByIdAndUpdate(_id, {
+          title: title,
+          note: note,
+          publisher: publisher,
+        });
         res.send("Updated!")
     } catch (err) {
         res.send(err)

@@ -1,17 +1,17 @@
 .thoughts-box {
-    height: 300px;
-    width: 250px;
-    background: #E1F0DA;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px grey;
-    padding: 1rem;
-    position: relative;
-    overflow: scroll;
-    overflow-x: hidden;
+  height: 300px;
+  width: 250px;
+  background: #e1f0da;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px grey;
+  padding: 1rem;
+  position: relative;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 .thoughts-box h3 {
-    margin-bottom: 0.3rem;
+  margin-bottom: 0.3rem;
 }
 
 .author {
@@ -22,19 +22,23 @@
 .note {
   font-size: 0.7rem;
   margin-top: 1rem;
-  
+}
+
+.update-section {
+  height: 100vh;
+  position: absolute;
 }
 
 .credits {
-    position: absolute;
-    top: 2.3rem;
-    left: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 0.7rem;
-    text-decoration: none;
-}/* For Webkit browsers (Chrome, Safari) */
+  position: absolute;
+  top: 2.3rem;
+  left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.7rem;
+  text-decoration: none;
+} /* For Webkit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
   width: 12px; /* Width of the scrollbar */
 }
@@ -54,12 +58,11 @@
 }
 
 .modify-button {
- position: absolute;
- right: 0.5rem;
- top: 0.5rem;
- font-size: 1.3rem;
- cursor: pointer;
- transition: ease-in-out 0.5s;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
 }
-
 

@@ -22,7 +22,9 @@ const Add = ({ handleExit, handleRefresh }) => {
         e.preventDefault();
         handleRefresh();
         const { title, note, publisher } = details;
-        await axios.post("http://localhost:8000/addNote", { title, note, publisher }).then(result => console.log(result)).catch(err => console.log(err));
+      await axios.post("http://localhost:8000/addNote", { title, note, publisher }).then(result => console.log(result)).catch(err => console.log(err));
+      
+      handleExit();
     }
 
   return (

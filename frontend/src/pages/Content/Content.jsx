@@ -2,7 +2,7 @@ import "./Content.css"
 import Nav from "../../components/Nav/Nav.jsx"
 import ThoughtsBox from "./ThoughtsBox.jsx"
 import axios from "axios";
-import Add from "../../components/Nav/Add/Add.jsx";
+import Add from "../../components/Add/Add.jsx";
 import { useEffect, useState } from "react";
 
 const Content = () => {
@@ -30,7 +30,7 @@ const Content = () => {
   
   const display = test.map(item => {
     return (
-      <ThoughtsBox handleRefresh={handleRefresh} id={item._id} key={Math.random(100)} title={item.title} note={item.note} publisher={item.publisher}/>
+      <ThoughtsBox handleShowAdd={handleShowAdd} handleRefresh={handleRefresh} id={item._id} key={Math.random(100)} title={item.title} note={item.note} publisher={item.publisher}/>
     )
   });
 
