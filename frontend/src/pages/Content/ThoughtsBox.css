@@ -1,0 +1,65 @@
+.thoughts-box {
+    height: 300px;
+    width: 250px;
+    background: #E1F0DA;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px grey;
+    padding: 1rem;
+    position: relative;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.thoughts-box h3 {
+    margin-bottom: 0.3rem;
+}
+
+.author {
+  text-decoration: red;
+  margin-bottom: 1rem;
+}
+
+.note {
+  font-size: 0.7rem;
+  margin-top: 1rem;
+  
+}
+
+.credits {
+    position: absolute;
+    top: 2.3rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.7rem;
+    text-decoration: none;
+}/* For Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the thumb */
+  border-radius: 6px; /* Rounded corners of the thumb */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color of the track */
+}
+
+/* Optional: Style the corners of the scrollbar */
+::-webkit-scrollbar-corner {
+  background-color: #f1f1f1;
+}
+
+.modify-button {
+ position: absolute;
+ right: 0.5rem;
+ top: 0.5rem;
+ font-size: 1.3rem;
+ cursor: pointer;
+ transition: ease-in-out 0.5s;
+}
+
+

@@ -3,6 +3,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+    background:#D4E7C5;
     justify-content: space-between;
     padding: 0 5%;
     box-shadow: 2px 2px 20px grey;
@@ -21,7 +22,7 @@
     padding: 0.5rem 1.4rem;
     border: 2px solid;
     border-radius: 0.5rem;
-    background: white;
+    background: #D4E7C5;
 }
 
 @media (max-width: 800px) {

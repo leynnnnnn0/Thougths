@@ -2,11 +2,15 @@ import mongoose from "mongoose";
 
 const thoughtModel = new mongoose.Schema(
   {
-    publisher: {
+    title: {
+      type: String,
+      required: true
+    },
+    note: {
       type: String,
       required: true,
     },
-    note: {
+    publisher: {
       type: String,
       required: true,
     },

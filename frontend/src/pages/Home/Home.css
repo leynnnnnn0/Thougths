@@ -3,4 +3,45 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background: #E1F0DA;
+}
+
+.books-image {
+    width: 300px;
+}
+
+.main-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.texts h3 {
+    font-size: 2.3rem;
+}
+
+@media (max-width: 730px) {
+    .texts h3 {
+        font-size: 2rem;
+    }
+    .texts p {
+        font-size: 0.8rem;
+    }
+    .books-image {
+        width: 200px;
+    }
+}
+
+@media (max-width: 550px) {
+    .texts h3 {
+        font-size: 1rem;
+    }
+    .texts p {
+        font-size: 0.5rem;
+    }
+    .books-image {
+        width: 120px;
+    }
 }
